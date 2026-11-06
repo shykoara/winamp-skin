@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Webamp Player</title>
+  <title>Misato Webamp Player</title>
   <style>
     body {
       margin: 0;
@@ -23,17 +23,16 @@
 
     if (Webamp.browserIsSupported()) {
       const webamp = new Webamp({
-        // Aynı depodaki Rei Ayanami temasının dosya adı
+        // Dosya adındaki boşluklar tarayıcıda sorun çıkarmaması için encode edildi
         initialSkin: {
-          url: "Neon Genesis Evangelion - Misato Cheap Thrills.wsz"
+          url: "Neon%20Genesis%20Evangelion%20-%20Misato%20Cheap%20Thrills.wsz"
         },
         initialTracks: [
           {
             metaData: {
               artist: "Evangelion",
-              title: "Misato Theme"
+              title: "Misato Katsuragi"
             },
-            // Müzik dosyanın doğrudan linki veya repoya ekleyeceğin bir mp3 adı
             url: "https://raw.githubusercontent.com/captbaritone/webamp/master/packages/webamp/demo/mp3/llama-2.29.mp3",
             duration: 5
           }
